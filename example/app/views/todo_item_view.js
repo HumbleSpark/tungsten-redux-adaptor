@@ -2,8 +2,6 @@ import BaseView from 'app/views/base_view';
 import { Actions } from 'app/reducer';
 import { ENTER_KEY, ESC_KEY } from 'app/lib/constants';
 
-// @TODO best way of grabbing id?
-
 export default BaseView.extend({
   events: {
     'blur .js-todo-edit': 'handleBlurTodoEdit',
