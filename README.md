@@ -1,6 +1,12 @@
 # Tungsten Redux Adaptor
 
-Connect Redux & Tungsten!
+##BETA
+
+Connects Redux & Tungsten!
+
+Relies on: https://github.com/wayfair/tungstenjs/pull/251, you need to check that out, and `npm i && npm run dist && npm link` and then `npm link tungtenjs` in tungsten-redux-adaptor dir
+
+To see TODO MVC demo: `npm i && npm start`
 
 BUGS/TODO:
 - [x] ```this.options.context.view``` won't work. Always references initial view context. Edit item, save it, then edit again to reproduce the error.
