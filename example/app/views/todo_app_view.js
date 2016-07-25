@@ -1,11 +1,9 @@
-import tungsten from 'tungstenjs';
+import BaseView from 'app/views/base_view';
 import NewItemView from 'app/views/todo_new_item_view';
 import TodoItemView from 'app/views/todo_item_view';
 import { Actions } from 'app/reducer';
 
-const { View, _ } = tungsten;
-
-export default View.extend({
+export default BaseView.extend({
   childViews: {
     'js-new-todo': NewItemView,
     'js-todo-item': TodoItemView
@@ -18,7 +16,7 @@ export default View.extend({
 
   // @TODO selector api?
   serialize: function() {
-    const state = View.prototype.serialize.call(this);
+    const state = BaseView.prototype.serialize.call(this);
 
     const filteredTodos = state.todoItems.filter(item => {
       if (state.filter === 'active') return !item.completed;

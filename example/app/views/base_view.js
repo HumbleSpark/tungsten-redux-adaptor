@@ -1,7 +1,9 @@
-import { View } from 'tungstenjs';
-export default View.extend({
+import { BaseView } from 'tungsten-redux-adaptor';
+
+// serialize immutable reducer
+export default BaseView.extend({
   serialize: function() {
-    const state = View.prototype.serialize.call(this);
+    const state = BaseView.prototype.serialize.call(this);
     return state.toJS();
   },
 });

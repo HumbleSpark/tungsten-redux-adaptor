@@ -1,8 +1,8 @@
-import { View } from 'tungstenjs';
+import BaseView from 'app/views/base_view';
 import { Actions } from 'app/reducer';
 import { ENTER_KEY } from 'app/lib/constants';
 
-export default View.extend({
+export default BaseView.extend({
   events: {
     'keyup': 'handleKeyup',
   },
