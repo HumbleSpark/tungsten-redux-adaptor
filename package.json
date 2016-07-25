@@ -1,0 +1,50 @@
+{
+  "name": "tungsten-redux-adaptor",
+  "version": "0.1.0",
+  "description": "redux adaptor for tungsten js",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HumbleSpark/tungsten-redux-adaptor.git"
+  },
+  "bugs": "https://github.com/HumbleSpark/tungsten-redux-adaptor/issues",
+  "scripts": {
+    "start": "babel-node example/server.js"
+  },
+  "authors": [
+    "Nick Dreckshage",
+    "Luke Westby"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "tungstenjs": "^0.13.5"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "immutable": "^3.8.1",
+    "lodash": "^4.14.0",
+    "redux": "^3.5.2",
+    "redux-act": "^0.5.0",
+    "style-loader": "^0.13.1",
+    "todomvc-app-css": "^2.0.6",
+    "tungstenjs": "^0.13.5",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1"
+  },
+  "tags": [
+    "tungsten",
+    "tungstenjs",
+    "redux"
+  ],
+  "keywords": [
+    "tungsten",
+    "tungstenjs",
+    "redux"
+  ]
+}
