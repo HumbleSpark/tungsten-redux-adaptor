@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
+// @TODO remove temp scoped npm
+
 module.exports = {
   devtool: 'source-map',
   entry: path.join(__dirname, 'app'),
@@ -12,7 +14,8 @@ module.exports = {
   resolve: {
     modulesDirectories: ['web_modules', 'node_modules', path.resolve(__dirname)],
     alias: {
-      'tungsten-redux-adaptor': path.join(__dirname, '..', 'lib')
+      'tungsten-redux-adaptor': path.join(__dirname, '..', 'lib'),
+      'tungstenjs': require.resolve('@ndreckshage/tungstenjs')
     }
   },
   module: {

@@ -16,10 +16,9 @@
     "Luke Westby"
   ],
   "license": "MIT",
-  "peerDependencies": {
-    "tungstenjs": "^0.13.5"
+  "dependencies": {
+    "@ndreckshage/tungstenjs": "^0.14.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.11.4",
@@ -34,7 +33,6 @@
     "redux-act": "^0.5.0",
     "style-loader": "^0.13.1",
     "todomvc-app-css": "^2.0.6",
-    "tungstenjs": "^0.13.5",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1"
   },
