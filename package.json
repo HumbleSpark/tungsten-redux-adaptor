@@ -9,7 +9,10 @@
   },
   "bugs": "https://github.com/HumbleSpark/tungsten-redux-adaptor/issues",
   "scripts": {
-    "start": "babel-node example/server.js"
+    "start": "babel-node example/server.js",
+    "clean": "rimraf lib",
+    "build": "babel ./modules -d lib",
+    "prepublish": "npm run clean && npm run build"
   },
   "authors": [
     "Nick Dreckshage",
@@ -31,6 +34,7 @@
     "lodash": "^4.14.0",
     "redux": "^3.5.2",
     "redux-act": "^0.5.0",
+    "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "todomvc-app-css": "^2.0.6",
     "webpack": "^1.13.1",

@@ -1,12 +1,6 @@
-'use strict';
+import { ComponentWidget } from '@ndreckshage/tungstenjs';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _tungstenjs = require('@ndreckshage/tungstenjs');
-
-var initialize = function initialize(view, parentContext) {
+const initialize = function(view, parentContext) {
   if (view == null) view = {};
   view.tungstenModel = true; // hardcode true for redux pojos. tungstenjs/src/template/template_context#isModel needs it
   if (!parentContext && view.parent) {
@@ -16,14 +10,14 @@ var initialize = function initialize(view, parentContext) {
   }
 };
 
-var lookupValue = function lookupValue(view, name) {
+const lookupValue = function(view, name) {
   if (view[name] != null) return view[name];
   if (typeof value === 'function') return value.call(view); // not sure why needed but keep
   return null;
 };
 
-exports.default = {
-  initialize: initialize,
-  lookupValue: lookupValue,
-  ComponentWidget: _tungstenjs.ComponentWidget
-};
+export default {
+  initialize,
+  lookupValue,
+  ComponentWidget,
+}
